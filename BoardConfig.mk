@@ -168,5 +168,5 @@ SMALLER_FONT_FOOTPRINT := true
 # Power
 TARGET_PROVIDES_POWERHAL := true
 
-# Assert device
+# Target Assert device
 TARGET_OTA_ASSERT_DEVICE := golfu

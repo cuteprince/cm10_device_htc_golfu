@@ -254,7 +254,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.enable_bypass=1 \
     ro.telephony.call_ring.multiple=false \
     persist.sys.use_dithering=1 \
-    ro.vold.umsdirtyratio=50
+    ro.vold.umsdirtyratio=20
 
 PRODUCT_AAPT_CONFIG := normal mdpi
 PRODUCT_AAPT_PREF_CONFIG := mdpi

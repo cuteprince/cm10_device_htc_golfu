@@ -12,7 +12,7 @@ on emmc
     mount ext4 emmc@devlog /devlog nosuid nodev barrier=1
 
 on early-init
-    mkdir /storage 0050 system sdcard_r
+    mkdir /storage 0775 system sdcard_r
     mkdir /storage/sdcard0 0000 system system
 
     # for backwards compatibility

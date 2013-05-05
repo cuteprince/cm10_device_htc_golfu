@@ -12,6 +12,14 @@ on emmc
     mount ext4 emmc@devlog /devlog nosuid nodev barrier=1
 
 on early-init
+    mkdir /storage 0050 system sdcard_r
+    mkdir /storage/sdcard0 0000 system system
+
+    # for backwards compatibility
+    symlink /storage/sdcard0 /sdcard
+    symlink /storage/sdcard0 /mnt/sdcard
+
+    export EXTERNAL_STORAGE /storage/sdcard0
     device mtd@misc 0460 radio diag
 
 on init
@@ -22,6 +30,7 @@ on init
     chmod 0771 /data/secure
     mkdir /data/secure/data 0771 system system
     mount tmpfs tmpfs /data/secure/data mode=0771,uid=1000,gid=1000
+    mkdir /mnt/emmc 0000 system system
 
     #set G-Sensor and Compass permissions
     chown compass system /dev/akm8975_aot
@@ -30,9 +39,6 @@ on init
     chmod 0640 /dev/akm8975_aot
     chmod 0640 /dev/akm8975_daemon
     chmod 0640 /dev/bma150
-    mkdir /mnt/emmc 0000 system system
-    symlink /mnt/emmc /emmc
-    symlink /mnt/emmc /ins
 
 on boot
 # unmap left alt to avoid console switch

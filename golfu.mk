@@ -156,15 +156,13 @@ PRODUCT_COPY_FILES += \
     device/htc/golfu/proprietary/etc/firmware/ath6k/AR6003/hw2.1.1:system/etc/firmware/ath6k/AR6003/hw2.1.1 \
     device/htc/golfu/proprietary/etc/firmware/ath6k/AR6003/hw2.1.1/athtcmd_ram.bin:system/etc/firmware/ath6k/AR6003/hw2.1.1/athtcmd_ram.bin \
     device/htc/golfu/proprietary/etc/firmware/ath6k/AR6003/hw2.1.1/bdata.bin:system/etc/firmware/ath6k/AR6003/hw2.1.1/bdata.bin \
-    device/htc/golfu/proprietary/etc/firmware/ath6k/AR6003/hw2.1.1/bdata.bin1:system/etc/firmware/ath6k/AR6003/hw2.1.1/bdata.bin1 \
-    device/htc/golfu/proprietary/etc/firmware/ath6k/AR6003/hw2.1.1/bdata.bin2:system/etc/firmware/ath6k/AR6003/hw2.1.1/bdata.bin2 \
-    device/htc/golfu/proprietary/etc/firmware/ath6k/AR6003/hw2.1.1/bdata.bin3:system/etc/firmware/ath6k/AR6003/hw2.1.1/bdata.bin3 \
     device/htc/golfu/proprietary/etc/firmware/ath6k/AR6003/hw2.1.1/fw-3.bin:system/etc/firmware/ath6k/AR6003/hw2.1.1/fw-3.bin \
     device/htc/golfu/proprietary/etc/firmware/ath6k/AR6003/hw2.1.1/nullTestFlow.bin:system/etc/firmware/ath6k/AR6003/hw2.1.1/nullTestFlow.bin \
     device/htc/golfu/proprietary/etc/firmware/ath6k/AR6003/hw2.1.1/utf.bin:system/etc/firmware/ath6k/AR6003/hw2.1.1/utf.bin \
     device/htc/golfu/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-    device/htc/golfu/proprietary/etc/dhcpd/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf \
-    device/htc/golfu/proprietary/etc/wifi/hostapd.conf:system/etc/wifi/hostapd.conf
+    device/htc/golfu/proprietary/etc/wifi/p2p_supplicant.conf:system/etc/wifi/p2p_supplicant.conf \
+    device/htc/golfu/proprietary/lib/modules/ath6kl_sdio.ko:system/wifi/ath6kl_sdio.ko \
+    device/htc/golfu/proprietary/lib/modules/cfg80211.ko:system/wifi/cfg80211.ko
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -235,9 +233,6 @@ PRODUCT_COPY_FILES += \
     device/htc/golfu/proprietary/etc/init.qcom.bt.sh:system/etc/init.qcom.bt.sh \
     device/htc/golfu/proprietary/etc/init.qcom.fm.sh:system/etc/init.qcom.fm.sh \
     device/htc/golfu/proprietary/etc/init.qcom.post_boot.sh:system/etc/init.qcom.post_boot.sh \
-    device/htc/golfu/proprietary/lib/modules/ath6kl_sdio.ko:system/lib/modules/ath6kl_sdio.ko \
-    device/htc/golfu/proprietary/lib/modules/cfg80211.ko:system/lib/modules/cfg80211.ko \
-    device/htc/golfu/proprietary/lib/modules/compat.ko:system/lib/modules/compat.ko \
     device/htc/golfu/proprietary/lib/modules/kineto_gan.ko:system/lib/modules/kineto_gan.ko \
     device/htc/golfu/proprietary/bin/fm_qsoc_patches:system/bin/fm_qsoc_patches \
     device/htc/golfu/proprietary/bin/udhcpd:system/bin/udhcpd \
@@ -253,6 +248,7 @@ PRODUCT_COPY_FILES += \
     device/htc/golfu/proprietary/bin/zimmer:system/bin/zimmer \
     device/htc/golfu/proprietary/bin/ath6kl-fwlog-record:system/bin/ath6kl-fwlog-record \
     device/htc/golfu/proprietary/bin/athtestcmd:system/bin/athtestcmd \
+    device/htc/golfu/proprietary/bin/hostapd:system/bin/hostapd \
     device/htc/golfu/proprietary/xbin/wireless_modem:system/xbin/wireless_modem 
     
 PRODUCT_PROPERTY_OVERRIDES += \

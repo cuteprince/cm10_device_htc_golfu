@@ -62,11 +62,10 @@ on boot
     chown media audio /data/audio
     chmod 755 /data/audio
 
-# permissions for NFC
-	chmod 0600 /dev/pn544
-	chown nfc nfc /dev/pn544
-	setprop debug.nfc.fw_download "false"
-	setprop debug.nfc.fw_boot_download "false"
+#NFC
+    setprop ro.nfc.port "I2C"
+    chmod 0660 /dev/pn544
+    chown nfc nfc /dev/pn544
 
 # HTC_WIFI_START
     mkdir /data/misc/wifi 0770 wifi wifi

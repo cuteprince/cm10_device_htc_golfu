@@ -11,6 +11,9 @@ DEVICE_PACKAGE_OVERLAYS += device/htc/golfu/overlay
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 $(call inherit-product, device/common/gps/gps_eu_supl.mk)
 
+# Enhanced NFC
+$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+
 # Inherit device configuration
 $(call inherit-product, device/htc/golfu/golfu.mk)
 

@@ -161,8 +161,9 @@ PRODUCT_COPY_FILES += \
     device/htc/golfu/proprietary/etc/firmware/ath6k/AR6003/hw2.1.1/utf.bin:system/etc/firmware/ath6k/AR6003/hw2.1.1/utf.bin \
     device/htc/golfu/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
     device/htc/golfu/proprietary/etc/wifi/p2p_supplicant.conf:system/etc/wifi/p2p_supplicant.conf \
-    device/htc/golfu/proprietary/lib/modules/ath6kl_sdio.ko:system/wifi/ath6kl_sdio.ko \
-    device/htc/golfu/proprietary/lib/modules/cfg80211.ko:system/wifi/cfg80211.ko
+    device/htc/golfu/proprietary/wifi:system/wifi \
+    device/htc/golfu/proprietary/wifi/ath6kl_sdio.ko:system/wifi/ath6kl_sdio.ko \
+    device/htc/golfu/proprietary/wifi/cfg80211.ko:system/wifi/cfg80211.ko
 
 # Audio
 PRODUCT_COPY_FILES += \

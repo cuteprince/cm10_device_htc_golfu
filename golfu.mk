@@ -205,7 +205,7 @@ PRODUCT_COPY_FILES += \
 
 # NFC firmware
 PRODUCT_COPY_FILES += \
-    device/htc/golfu/proprietary/lib/libpn544_fw:system/vendor/firmware/libpn544_fw.so
+    device/htc/golfu/proprietary/lib/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so
 
 # Audio DSP Profiles
 PRODUCT_COPY_FILES += \
